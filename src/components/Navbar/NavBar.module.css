@@ -1,0 +1,19 @@
+.nav {
+   background-color: brown;
+   grid-area: n;
+   padding: 20px;
+}
+
+.item  {
+   color: wheat;
+   text-decoration: none;
+}
+
+.item a:active {
+   color: springgreen;
+}
+
+
+.active {
+   color: gold;
+   text-decoration: none;}

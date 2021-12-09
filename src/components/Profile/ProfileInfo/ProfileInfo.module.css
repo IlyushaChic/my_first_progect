@@ -1,0 +1,18 @@
+.body{
+   padding: 10px  0 0px 10px;
+}
+
+
+.ava{
+   color: blue;
+   padding: 5px;
+}
+
+.image{
+   margin:10px 0 0 10px ;
+   background: url(https://pictureholiday.ru/wp-content/uploads/2018/05/s1200-4.jpeg) 0 0/ 100% 100% no-repeat;
+   width: 50px;
+   height: 50px;
+   border: 1px solid blue;
+   border-radius: 50%;
+}
