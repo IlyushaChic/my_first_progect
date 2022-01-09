@@ -2,23 +2,21 @@ ul li {
   list-style-type: georgian;
 }
 
+body{
+  background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614267705_7-p-chernii-geometricheskii-fon-9.jpg);
+}
 .app-wrapper {
   margin: 0 auto;
   width: 1200px;
   display: grid;
-
   grid-template-areas:
     "h h"
     "n c";
-
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
 }
 
 .app-wrapper-content {
-  
-    grid-area: c;
-    background-color: chartreuse;
-  
-  
-}
+  grid-area: c;
+  background:url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614191505_189-p-krasivii-fon-chernii-253.jpg) 0 0/ 100% no-repeat;
+  }
