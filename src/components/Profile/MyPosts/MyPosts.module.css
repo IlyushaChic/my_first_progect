@@ -1,0 +1,27 @@
+.body {
+   padding: 0 0 0 10px;
+}
+.ava {
+   color: green;
+   font-size: 20px;
+}
+.qwerty {
+   width: 550px;
+   border: 1px solid gold;
+   border-radius: 10px;
+   background: black;
+   color: green;
+   font-size: 20px;
+   padding: 10px;
+}
+.as button {
+   display: table-column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   margin: 10px;
+   border: 1px solid gold;
+   border-radius: 10px;
+   background: black;
+   color: green;
+}

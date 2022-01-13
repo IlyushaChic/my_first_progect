@@ -1,0 +1,14 @@
+.Login {
+   display: flex;
+   justify-content: center;
+}
+.log {
+   background: black;
+   color: green;
+   border: 1px solid green;
+}
+.cheack {
+   background: black;
+   color: green;
+   border: 1px solid green;
+}

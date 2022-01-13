@@ -1,0 +1,31 @@
+.music {
+   padding: 40px 0 0 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+div {
+   padding: 0 5px 0 5px;
+}
+.inp {
+   width: 600px;
+   height: 20px;
+   background: black;
+   color: gold;
+   font-size: 20px;
+   border: 1px solid gold;
+   border-radius: 10px;
+}
+input::placeholder {
+   color: #ffe4b5;
+}
+.serach {
+   border-radius: 10px;
+   border: 1px gold solid;
+   background: black;
+   color: white;
+}
+.search:hover {
+   background: gold;
+   color: black;
+}

@@ -1,0 +1,17 @@
+.body{
+   padding: 10px  0 0px 10px;
+}
+.ava{
+   color: gold;
+   padding: 5px;
+}
+.qwer{
+   width: 100px;
+}
+.ava img{
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   border-radius: 50%;
+   
+}
