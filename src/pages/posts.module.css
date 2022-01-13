@@ -1,0 +1,10 @@
+
+.btn{
+   border:1px solid blueviolet;
+   border-radius: 16px;
+   color :white;
+   margin: 15px;
+   padding: 10px;
+   background: #800080;
+   cursor: pointer;
+}

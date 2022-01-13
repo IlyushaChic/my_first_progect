@@ -1,54 +1,38 @@
-import React, { } from 'react';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from './components/UI/Navbar/Navbar';
+import AppRouter from './components/AppRouter';
+import { AuthContext } from './context';
+import { useEffect, useState } from 'react';
 
+function App() {
+  const [isAuth, setIsAuth] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
-import Dialogs from './components/Dialoges/Dialoges';
-import Header from './components/Header/Header';
-import NavBar from './components/Navbar/NavBar';
-import Profile from './components/Profile/Profile';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Settings from './components/Settings/Settings';
-import News from './components/News/News';
-import Music from './components/Music/Music';
+  useEffect(() => {
+    if (localStorage.getItem('auth')) {
+      setIsAuth(true)
+    }
+    setIsLoading(false);
+  }, [])
 
-
-
-
-
-const App = (props) => {
-
-
- 
-  return (
+  return (<AuthContext.Provider value={[
+    isAuth,
+    setIsAuth,
+    isLoading,
+  ]}>
     <BrowserRouter>
-
-
-
-      <div className='app-wrapper'>
-        <Header />
-        <NavBar />
-
-
-        <div className='app-wrapper-content'>
-          <Routes>
-            <Route path="/Dialoges/:id" element={<Dialogs  dialogs={props.dialogs} messages={props.messages}/>} />
-            <Route path="/Dialoges/:id/:id" element={<Dialogs dialogs={props.dialogs} messages={props.messages} />} />
-            <Route path="/Profile" element={<Profile  posts={props.posts}/>} />
-            <Route path="/Music" element={<Music />} />
-            <Route path="/News" element={<News />} />
-            <Route path="/Settings" element={<Settings />} />
-          </Routes >
-
-        </div>
-
-      </div>
+      <Navbar />
+      <AppRouter />
     </BrowserRouter>
-  );
+  </AuthContext.Provider>
+  )
 }
 
-
-
-
-
-
 export default App;
+
+
+
+
+
+
